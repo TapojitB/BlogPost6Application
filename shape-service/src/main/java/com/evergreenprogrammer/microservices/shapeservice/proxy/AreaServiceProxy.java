@@ -15,7 +15,7 @@ import com.evergreenprogrammer.microservices.shapeservice.bo.Area;
  *
  */
 @FeignClient(name = "area-service")
-@RibbonClient(name = "perimeter-service")
+@RibbonClient(name = "area-service")
 public interface AreaServiceProxy {
 
 	@GetMapping("/area/shapeType/{shapeType}")
